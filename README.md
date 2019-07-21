@@ -11,11 +11,11 @@ Start the container:
 $ docker-compose up
 ```
 
-* Then open `localhost:8071` to access Odoo 12.0. If you want to start the server with a different port, change **8071** to another value:
+* Then open `localhost:8069` to access Odoo 12.0. If you want to start the server with a different port, change **8069** to another value:
 
 ```
 ports:
- - "8071:8069"
+ - "8069:8069"
 ```
 
 * Log file is printed @ **etc/odoo-server.log**
@@ -29,6 +29,10 @@ $ docker-compose up -d
 # Custom addons
 
 The **addons** folder contains custom addons. Just put your custom addons if you have any.
+
+Create new module "phonebook" by command
+
+docker exec -t odoo odoo scaffold /mnt/extra-addons/phonebook
 
 # Odoo configuration
 
