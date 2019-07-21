@@ -41,7 +41,7 @@ To change Odoo configuration, edit file: **etc/odoo.conf**.
 # docker-compose.yml
 
 * odoo:12.0
-* postgres:9.5
+* postgres:11.0
 
 # Odoo 12 screenshots
 
