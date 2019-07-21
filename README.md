@@ -143,9 +143,9 @@ Basic module stater is in addons host folder
 
 # ขอให้สนุกกับการเขียนโปรแกรม
 
-```
+
 https://www.odoo.com/documentation/12.0/howtos/backend.html
-```
+
 
 # Odoo 12 screenshots
 
