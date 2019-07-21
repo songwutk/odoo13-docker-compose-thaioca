@@ -14,6 +14,8 @@
 
 ทางเลือกในการใช้ Docker มีหลายวิธี ท่านอาจะติดตั้ง Docker ใน Windows 
 
+https://docs.docker.com/docker-for-windows/install/
+
 หรือถ้าต้องการความเหมือนจริง สามารถติดตั้งโปรแกรม Virtualbox แล้วลง Linux Ubuntu ใน Virtualbox 
 
 โดย Download ไฟล์ ISO Image มาจำลองเป็นแผ่นติดตั้งใน Virtualbox ได้
