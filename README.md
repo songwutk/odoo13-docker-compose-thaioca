@@ -69,7 +69,12 @@ Change the folder permission to make sure that the container is able to access t
 ```
 $ sudo chmod -R 777 addons
 $ sudo chmod -R 777 etc
+$ sudo chmod -R 777 log
+$ sudo chmod -R 777 pgbackup
+$ sudo chmod -R 777 pgsql
 ```
+![folder](screenshots/folder.png)
+
 
 Start the container:
 เริ่มขึ้นระบบ
@@ -97,6 +102,8 @@ docker exec -t --user root  odoo  ln -s /usr/share/zoneinfo/Asia/Bangkok /etc/lo
 # การติดตามการทำงานของ Odoo
 
 * Log file is printed @ **etc/odoo-server.log**
+
+เพื่อความง่ายในการแยกแยะการทำงานเบื้องหลัง อยากให้ท่านเปิด terminal 2 session เพื่อรันคำสั่งดังนี้
  
 ```
  tail log/odoo-server.log  -f
@@ -105,6 +112,8 @@ docker exec -t --user root  odoo  ln -s /usr/share/zoneinfo/Asia/Bangkok /etc/lo
 ```
  tail log/pgsql/pgsql.csv  -f
 ```
+
+ระบบจะแสดง log ของ odoo และ sql query ของ postgresql ให้เห็นแบบ realtime
 
 ** คำเตือน : ระบบเปิด log ของ odoo แบบ 100% โปรดระวังขนาดไฟล์ใน log/odoo-server.log และ log/pgsql/pgsql.csv
 
@@ -126,11 +135,20 @@ To change Odoo configuration, edit file: **etc/odoo.conf**.
 ```
 # การเชื่อมต่อกับตัวจัดการ Database
  
- localhost:5050 หรือ http://(ip):5050 ท่านจะพบกับ pgadmin 
+ localhost:5050 หรือ http://(ip):5050 
+ 
+ ท่านจะพบกับ pgadmin 
  
 ![pgadmin](screenshots/pgadmin.png) 
-![pgadmin](screenshots/pgadmin2.png) 
- 
+
+ใส่ username password ดังรูป
+
+![pgadmin](screenshots/pgadmin-config.png) 
+
+ชื่อ hostname pgsql จะเป็นชื่อใน docker container ซึ่งระบบจะมองเห็นกันเอง 
+
+หากต้องการเชื่อมต่อด้วย Navicat สามารถใช้ username odoo / password odoo / ip server
+
 
 # Custom addons
 
