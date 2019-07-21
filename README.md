@@ -129,7 +129,7 @@ To change Odoo configuration, edit file: **etc/odoo.conf**.
  localhost:5050 หรือ http://(ip):5050 ท่านจะพบกับ pgadmin 
  
 ![pgadmin](screenshots/pgadmin.png) 
-![pgadmin](screenshots/pgadmin2.png) 
+![pgadmin](screenshots/pgadmin-config.png) 
  
 
 # Custom addons
