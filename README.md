@@ -100,19 +100,27 @@ docker exec -t --user root  odoo  ln -s /usr/share/zoneinfo/Asia/Bangkok /etc/lo
  
 ```
  tail log/odoo-server.log  -f
+ 
+ tail log/pgsql/pgsql.csv  -f
 ```
 
-** คำเตือน : ระบบเปิด log ของ odoo แบบ 100% โปรดระวังขนาดไฟล์ใน etc/odoo-server.log
+** คำเตือน : ระบบเปิด log ของ odoo แบบ 100% โปรดระวังขนาดไฟล์ใน log/odoo-server.log และ log/pgsql/pgsql.csv
 
 # Odoo configuration
 
 To change Odoo configuration, edit file: **etc/odoo.conf**.
 
-การปิด log อันมหาศาลจาก odoo
+การปิด log อันมหาศาลจาก odoo : etc/odoo.conf
 
 ```
 ; log_level = info
 
+```
+
+การปิด log อันมหาศาลจาก pgsql : etc/pgsql/postgresql.conf
+```
+; log_destination = 'csvlog'              # Valid values are combinations of
+; logging_collector = on          # Enable capturing of stderr and csvlog
 ```
 
 
