@@ -7,6 +7,38 @@
 
 การทำงานของแต่ละ container เสมือนมี server แยกทำงานกัน container ละตัว
 
+ใช้ประกอบการอบรม การพัฒนาโปรแกรมด้วย Odoo ERP ของชุมชน Thai OCA
+
+
+# Docker Server
+
+ทางเลือกในการใช้ Docker มีหลายวิธี ท่านอาจะติดตั้ง Docker ใน Windows 
+
+หรือถ้าต้องการความเหมือนจริง สามารถติดตั้งโปรแกรม Virtualbox แล้วลง Linux Ubuntu ใน Virtualbox 
+
+โดย Download ไฟล์ ISO Image มาจำลองเป็นแผ่นติดตั้งใน Virtualbox ได้
+
+https://www.virtualbox.org/wiki/Downloads
+
+https://ubuntu.com/download/server
+
+
+การตั้งค่าการ์ดแลนใน vitualbox อาจจะใช้ bridge mode ตัวเดียว 
+
+จำลองเป็นการ์ดของอีกเครื่องที่อยู่ในวงแลนเดียวกันในสำนักงาน 
+
+ซึ่งเครื่องอื่นสามารถเข้ามาชมเว็บ odoo ของเราได้
+
+
+
+การเชื่อมต่อระบบเข้า server สามารถใช้โปรแกรม putty และ winscp
+
+https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
+
+https://winscp.net/eng/download.php
+
+
+
 # Usage
 
 เครื่องที่จะใช้งานต้องติดตั้ง docker และ docker-compose ให้เรียบร้อย ถ้าเป็น Linux ได้จะดีมาก
