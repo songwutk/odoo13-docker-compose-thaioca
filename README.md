@@ -2,10 +2,11 @@
 
 เครื่องที่จะใช้งานต้องติดตั้ง docker และ docker-compose ให้เรียบร้อย ถ้าเป็น Linux ได้จะดีมาก
 
+```
 git clone https://github.com/songwutk/odoo-12-docker-compose.git
 
 cd odoo-12-docker-compose
-
+```
 
 Change the folder permission to make sure that the container is able to access the directory:
 
@@ -32,16 +33,33 @@ ports:
 ```
 
 # ตั้งเวลาท้องถิ่นใน Container Odoo เป็นประเทศไทย
+```
 docker exec -t --user root  odoo  rm -f /etc/localtime
 
 docker exec -t --user root  odoo  ln -s /usr/share/zoneinfo/Asia/Bangkok /etc/localtime
+```
 
 # การติดตามการทำงานของ Odoo
 
 * Log file is printed @ **etc/odoo-server.log**
+ 
+```
  tail etc/odoo-server.log  -f
+```
 
 ** คำเตือน : ระบบเปิด log ของ odoo แบบ 100% โปรดระวังขนาดไฟล์ใน etc/odoo-server.log
+
+# Odoo configuration
+
+To change Odoo configuration, edit file: **etc/odoo.conf**.
+
+การปิด log อันมหาศาลจาก odoo
+
+```
+; log_level = info
+
+```
+
 
 # Custom addons
 
@@ -53,13 +71,13 @@ Create new module "phonebook" by command
 
 ใช้คำสั่ง docker ดังนี้
 
+```
 docker exec -t odoo odoo scaffold /mnt/extra-addons/phonebook
+```
 
 Basic module stater is in addons host folder
 
-# Odoo configuration
 
-To change Odoo configuration, edit file: **etc/odoo.conf**.
 
 # docker-compose.yml
 
