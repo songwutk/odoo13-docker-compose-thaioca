@@ -26,3 +26,16 @@ services:
       - ./etc:/etc/odoo
       - ./log:/var/log/odoo      
     restart: always             # run as a service
+    
+  pgadmin:
+    container_name: pgadmin
+    image: dpage/pgadmin4
+    #   user : pgadmin4@pgadmin.org, passwd : admin
+    environment:
+      - PGADMIN_DEFAULT_EMAIL=pgadmin4@pgadmin.org
+      - PGADMIN_DEFAULT_PASSWORD=admin
+    ports:
+      - "5050:80"
+    volumes:
+      - ./pgbackup/:/backup
+      - ./pgbackup/:/var/lib/pgadmin/storage/pgadmin4_pgadmin.org/backup
