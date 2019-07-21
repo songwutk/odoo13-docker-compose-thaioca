@@ -38,6 +38,9 @@ https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
 https://winscp.net/eng/download.php
 
 
+>ที่อยากแนะนำที่สุดคือ ลองลง ubuntu desktop ในเครื่องเลยดีกว่า มันไม่ได้เลวร้ายอย่างที่คิด
+>แล้วเอา windows ไปลงใน virtualbox แทน
+
 
 # Usage
 
