@@ -60,4 +60,4 @@ To change Odoo configuration, edit file: **etc/odoo.conf**.
 
 ![odoo-12-sales](screenshots/odoo-12-sales-screen.png)
 
-![odoo-12-sales](screenshots/phonebook.jpg)
+![your new module ](screenshots/phonebook.jpg)
