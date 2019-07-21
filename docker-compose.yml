@@ -1,19 +1,22 @@
 version: '2'
 services:
   db:
-    image: postgres:9.5
+    container_name: pgsql
+    image: postgres:11.0
     environment:
       - POSTGRES_PASSWORD=odoo
       - POSTGRES_USER=odoo
       - POSTGRES_DB=postgres
     restart: always             # run as a service
+    ports :
+        - "5432:5432"
 
   odoo12:
     image: odoo:12.0
     depends_on:
       - db
     ports:
-      - "8071:8069"
+      - "8069:8069"
     tty: true
     command: -- --dev=reload
 #    command: odoo scaffold /mnt/extra-addons/test_module
