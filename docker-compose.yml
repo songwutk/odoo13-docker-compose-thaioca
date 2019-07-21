@@ -10,6 +10,9 @@ services:
     restart: always             # run as a service
     ports :
         - "5432:5432"
+    volumes:
+      - ./pgsql:/var/lib/postgresql/data
+      - ./log/pgsql:/var/log/postgresql
 
   odoo12:
     container_name: odoo    
@@ -23,7 +26,7 @@ services:
 #    command: odoo scaffold /mnt/extra-addons/test_module
     volumes:
       - ./addons:/mnt/extra-addons
-      - ./etc:/etc/odoo
+      - ./etc/odoo:/etc/odoo
       - ./log:/var/log/odoo      
     restart: always             # run as a service
     

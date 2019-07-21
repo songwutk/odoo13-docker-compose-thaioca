@@ -1,0 +1,1 @@
+csvlog /var/log/postgresql/pgsql.csv
