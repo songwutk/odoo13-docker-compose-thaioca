@@ -100,7 +100,9 @@ docker exec -t --user root  odoo  ln -s /usr/share/zoneinfo/Asia/Bangkok /etc/lo
  
 ```
  tail log/odoo-server.log  -f
- 
+```
+
+```
  tail log/pgsql/pgsql.csv  -f
 ```
 
