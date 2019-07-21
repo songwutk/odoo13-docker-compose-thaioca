@@ -2,6 +2,15 @@
 
 เครื่องที่จะใช้งานต้องติดตั้ง docker และ docker-compose ให้เรียบร้อย ถ้าเป็น Linux ได้จะดีมาก
 
+แหล่งศึกษาวิธีการติดตั้ง docker ใน linux
+
+https://linuxize.com/post/how-to-install-and-use-docker-on-ubuntu-18-04/
+
+การติดตั้ง docker-compose
+
+https://linuxize.com/post/how-to-install-and-use-docker-compose-on-ubuntu-18-04/
+
+
 ```
 git clone https://github.com/songwutk/odoo-12-docker-compose.git
 
