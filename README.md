@@ -99,7 +99,7 @@ docker exec -t --user root  odoo  ln -s /usr/share/zoneinfo/Asia/Bangkok /etc/lo
 * Log file is printed @ **etc/odoo-server.log**
  
 ```
- tail etc/odoo-server.log  -f
+ tail log/odoo-server.log  -f
 ```
 
 ** คำเตือน : ระบบเปิด log ของ odoo แบบ 100% โปรดระวังขนาดไฟล์ใน etc/odoo-server.log
