@@ -39,6 +39,8 @@ docker exec -t --user root  odoo  ln -s /usr/share/zoneinfo/Asia/Bangkok /etc/lo
 # การติดตามการทำงานของ Odoo
  tail etc/odoo-server.log  -f
 
+** คำเตือน : ระบบเปิด log ของ odoo แบบ 100% โปรดระวังขนาดไฟล์ใน etc/odoo-server.log
+
 # Custom addons
 
 ทดลองสร้าง Module ขึ้นมาใหม่ในชื่อ phone book 
