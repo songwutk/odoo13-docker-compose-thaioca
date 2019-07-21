@@ -31,6 +31,7 @@ ports:
 
 # ตั้งเวลาท้องถิ่นใน Container Odoo เป็นประเทศไทย
 docker exec -t --user root  odoo  rm -f /etc/localtime
+
 docker exec -t --user root  odoo  ln -s /usr/share/zoneinfo/Asia/Bangkok /etc/localtime
 
 * Log file is printed @ **etc/odoo-server.log**
@@ -47,6 +48,7 @@ The **addons** folder contains custom addons. Just put your custom addons if you
 Create new module "phonebook" by command
 
 ใช้คำสั่ง docker ดังนี้
+
 docker exec -t odoo odoo scaffold /mnt/extra-addons/phonebook
 
 Basic module stater is in addons host folder
