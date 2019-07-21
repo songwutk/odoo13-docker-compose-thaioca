@@ -58,6 +58,9 @@ To change Odoo configuration, edit file: **etc/odoo.conf**.
 * odoo : 12.0
 * postgres : 11.0
 
+# การติดตามการทำงานของ Odoo
+ tail etc/odoo-server.log  -f
+
 # Odoo 12 screenshots
 
 ![odoo-12-welcome-docker](screenshots/odoo-12-welcome-screenshot.png)
