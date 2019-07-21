@@ -29,6 +29,10 @@ ports:
  - "8069:8069"
 ```
 
+# ตั้งเวลาท้องถิ่นใน Container Odoo เป็นประเทศไทย
+docker exec -t --user root  odoo  rm -f /etc/localtime
+docker exec -t --user root  odoo  ln -s /usr/share/zoneinfo/Asia/Bangkok /etc/localtime
+
 * Log file is printed @ **etc/odoo-server.log**
 
 # การติดตามการทำงานของ Odoo
