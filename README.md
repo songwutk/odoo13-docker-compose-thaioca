@@ -1,6 +1,6 @@
 # docker-compose.yml
 
-รายการ container มี 2 รายการแยกกันดังนี้
+รายการ docker container มี 2 รายการแยกกันดังนี้
 
 * odoo : 12.0
 * postgres : 11.0
@@ -45,12 +45,12 @@ $ docker-compose up -d
 การเข้าเว็บให้ชี้ไปที่ port 8069 เช่น localhost:8069 หรือ http://(ip):8069 เป็นต้น
 ```
 # ข้อความใน docker-compose.yml
-# -"ด้านนอกฝั่ง user":"ด้านใน container"
+# -"ด้านนอกฝั่ง user":"ด้านใน docker container"
 ports:
  - "8069:8069"
 ```
 
-# ตั้งเวลาท้องถิ่นใน Container Odoo เป็นประเทศไทย
+# ตั้งเวลาท้องถิ่นใน docker container Odoo เป็นประเทศไทย
 ```
 docker exec -t --user root  odoo  rm -f /etc/localtime
 
@@ -101,7 +101,7 @@ Basic module stater is in addons host folder
 # ข้อความใน docker-compose.yml
 
 #  เปิดประตูมิติเชื่อมหากัน
-#  folder เครื่องของเรา : folder ที่อยู่ใน container
+#  folder เครื่องของเรา : folder ที่อยู่ใน docker container
     volumes:
       - ./addons:/mnt/extra-addons
 ```
