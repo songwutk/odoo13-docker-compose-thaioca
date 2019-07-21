@@ -26,6 +26,7 @@ $ docker-compose up -d
 การเข้าเว็บให้ชี้ไปที่ port 8069 เช่น localhost:8069 หรือ http://(ip):8069 เป็นต้น
 ```
 # ข้อความใน docker-compose.yml
+# -"ด้านนอกฝั่ง user":"ด้านใน container"
 ports:
  - "8069:8069"
 ```
