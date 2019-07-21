@@ -34,9 +34,9 @@ docker exec -t --user root  odoo  rm -f /etc/localtime
 
 docker exec -t --user root  odoo  ln -s /usr/share/zoneinfo/Asia/Bangkok /etc/localtime
 
-* Log file is printed @ **etc/odoo-server.log**
-
 # การติดตามการทำงานของ Odoo
+
+* Log file is printed @ **etc/odoo-server.log**
  tail etc/odoo-server.log  -f
 
 ** คำเตือน : ระบบเปิด log ของ odoo แบบ 100% โปรดระวังขนาดไฟล์ใน etc/odoo-server.log
