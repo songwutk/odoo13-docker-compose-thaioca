@@ -106,6 +106,8 @@ docker exec -t --user root  odoo  ln -s /usr/share/zoneinfo/Asia/Bangkok /etc/lo
  tail log/pgsql/pgsql.csv  -f
 ```
 
+ระบบจะแสดง log ของ odoo และ sql query ของ postgresql ให้เห็นแบบ realtime
+
 ** คำเตือน : ระบบเปิด log ของ odoo แบบ 100% โปรดระวังขนาดไฟล์ใน log/odoo-server.log และ log/pgsql/pgsql.csv
 
 # Odoo configuration
