@@ -12,6 +12,7 @@ services:
         - "5432:5432"
 
   odoo12:
+    container_name: odoo    
     image: odoo:12.0
     depends_on:
       - db
