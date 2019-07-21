@@ -126,11 +126,20 @@ To change Odoo configuration, edit file: **etc/odoo.conf**.
 ```
 # การเชื่อมต่อกับตัวจัดการ Database
  
- localhost:5050 หรือ http://(ip):5050 ท่านจะพบกับ pgadmin 
+ localhost:5050 หรือ http://(ip):5050 
+ 
+ ท่านจะพบกับ pgadmin 
  
 ![pgadmin](screenshots/pgadmin.png) 
+
+ใส่ username password ดังรูป
+
 ![pgadmin](screenshots/pgadmin-config.png) 
- 
+
+ชื่อ hostname pgsql จะเป็นชื่อใน docker container ซึ่งระบบจะมองเห็นกันเอง 
+
+หากต้องการเชื่อมต่อด้วย Navicat สามารถใช้ username odoo / password odoo / ip server
+
 
 # Custom addons
 
