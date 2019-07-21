@@ -124,7 +124,13 @@ To change Odoo configuration, edit file: **etc/odoo.conf**.
 ; log_destination = 'csvlog'              # Valid values are combinations of
 ; logging_collector = on          # Enable capturing of stderr and csvlog
 ```
-
+# การเชื่อมต่อกับตัวจัดการ Database
+ 
+ localhost:5050 หรือ http://(ip):5050 ท่านจะพบกับ pgadmin 
+ 
+![pgadmin](screenshots/pgadmin.png) 
+![pgadmin](screenshots/pgadmin2.png) 
+ 
 
 # Custom addons
 
