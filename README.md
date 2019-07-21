@@ -73,6 +73,8 @@ $ sudo chmod -R 777 log
 $ sudo chmod -R 777 pgbackup
 $ sudo chmod -R 777 pgsql
 ```
+![folder](screenshots/folder.png)
+
 
 Start the container:
 เริ่มขึ้นระบบ
