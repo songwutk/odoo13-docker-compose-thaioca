@@ -1,3 +1,12 @@
+# docker-compose.yml
+
+รายการ container มี 2 รายการแยกกันดังนี้
+
+* odoo : 12.0
+* postgres : 11.0
+
+การทำงานของแต่ละ container เสมือนมี server แยกทำงานกัน container ละตัว
+
 # Usage
 
 เครื่องที่จะใช้งานต้องติดตั้ง docker และ docker-compose ให้เรียบร้อย ถ้าเป็น Linux ได้จะดีมาก
@@ -86,12 +95,17 @@ docker exec -t odoo odoo scaffold /mnt/extra-addons/phonebook
 
 Basic module stater is in addons host folder
 
+ระบบจะมีการสร้างไฟล์พื้นฐานของ Module ไว้ที่โฟลเดอร์ addons
 
+```
+# ข้อความใน docker-compose.yml
 
-# docker-compose.yml
+#  เปิดประตูมิติเชื่อมหากัน
+#  folder เครื่องของเรา : folder ที่อยู่ใน container
+    volumes:
+      - ./addons:/mnt/extra-addons
+```
 
-* odoo : 12.0
-* postgres : 11.0
 
 
 # Odoo 12 screenshots
