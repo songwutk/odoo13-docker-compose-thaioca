@@ -1,5 +1,11 @@
 # Usage
 
+เครื่องที่จะใช้งานต้องติดตั้ง docker และ docker-compose ให้เรียบร้อย ถ้าเป็น Linux ได้จะดีมาก
+
+git clone https://github.com/songwutk/odoo-12-docker-compose.git
+cd odoo-12-docker-compose
+
+
 Change the folder permission to make sure that the container is able to access the directory:
 
 กำหนดให้โฟลเดอร์ addons และ etc เขียนได้ทุกระดับ user
@@ -60,4 +66,4 @@ To change Odoo configuration, edit file: **etc/odoo.conf**.
 
 ![odoo-12-sales](screenshots/odoo-12-sales-screen.png)
 
-![your new module ](screenshots/phonebook.jpg)
+![your new module ](screenshots/phonebook.png)
