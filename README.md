@@ -69,6 +69,9 @@ Change the folder permission to make sure that the container is able to access t
 ```
 $ sudo chmod -R 777 addons
 $ sudo chmod -R 777 etc
+$ sudo chmod -R 777 log
+$ sudo chmod -R 777 pgbackup
+$ sudo chmod -R 777 pgsql
 ```
 
 Start the container:
