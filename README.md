@@ -79,7 +79,6 @@ $ sudo chmod -R 777 addons
 $ sudo chmod -R 777 etc
 $ sudo chmod -R 777 log
 $ sudo chmod -R 777 pgbackup
-$ sudo chmod -R 777 pgsql
 ```
 ![folder](screenshots/folder.png)
 
