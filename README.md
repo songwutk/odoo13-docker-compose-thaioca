@@ -56,6 +56,14 @@ https://linuxize.com/post/how-to-install-and-use-docker-on-ubuntu-18-04/
 
 https://linuxize.com/post/how-to-install-and-use-docker-compose-on-ubuntu-18-04/
 
+ในที่นี้ขอให้สร้าง folder /var/docker/ ขึ้นมา 
+
+```
+sudo mkdir -p /var/docker
+chmod 777 /var/docker
+cd /var/docker
+```
+เราจะเริ่ม clone โปรเจค docker มาลงในเครื่องด้วยคำสั่ง git
 
 ```
 git clone https://github.com/songwutk/odoo-12-docker-compose.git
