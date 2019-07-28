@@ -114,7 +114,6 @@ docker exec -t --user root  odoo  ln -s /usr/share/zoneinfo/Asia/Bangkok /etc/lo
 ```
 cd pgctrl 
 bash turn_on_log.sh
-
 ```
 
 เพื่อความง่ายในการแยกแยะการทำงานเบื้องหลัง อยากให้ท่านเปิด terminal 2 session เพื่อรันคำสั่งดังนี้
@@ -147,6 +146,13 @@ To change Odoo configuration, edit file: **etc/odoo.conf**.
 ; log_destination = 'csvlog'              # Valid values are combinations of
 ; logging_collector = on          # Enable capturing of stderr and csvlog
 ```
+
+วิธีการ
+```
+cd pgctrl 
+bash turn_off_log.sh
+```
+
 # การเชื่อมต่อกับตัวจัดการ Database
  
  localhost:5050 หรือ http://(ip):5050 
