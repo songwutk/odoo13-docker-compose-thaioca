@@ -109,7 +109,14 @@ docker exec -t --user root  odoo  ln -s /usr/share/zoneinfo/Asia/Bangkok /etc/lo
 
 # การติดตามการทำงานของ Odoo
 
-* Log file is printed @ **etc/odoo-server.log**
+เราสามารถเปิดการใช้งาน log เพื่อเช็คการทำงานของ sql และ odoo ได้ดังนี้
+
+
+```
+cd pgctrl 
+bash turn_on_log.sh
+
+```
 
 เพื่อความง่ายในการแยกแยะการทำงานเบื้องหลัง อยากให้ท่านเปิด terminal 2 session เพื่อรันคำสั่งดังนี้
  
