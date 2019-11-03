@@ -2,7 +2,7 @@
 
 รายการ docker container มี 2 รายการแยกกันดังนี้
 
-* odoo : 12.0
+* odoo : 13.0
 * postgres : 11.0
 
 การทำงานของแต่ละ container เสมือนมี server แยกทำงานกัน container ละตัว
@@ -66,9 +66,9 @@ cd /var/docker
 เราจะเริ่ม clone โปรเจค docker มาลงในเครื่องด้วยคำสั่ง git
 
 ```
-git clone https://github.com/songwutk/odoo-12-docker-compose.git
+git clone https://github.com/songwutk/odoo-13-docker-compose.git
 
-cd odoo-12-docker-compose
+cd odoo-13-docker-compose
 ```
 
 Change the folder permission to make sure that the container is able to access the directory:
@@ -89,7 +89,7 @@ Start the container:
 $ docker-compose up -d
 ```
 
-* Then open `localhost:8069` to access Odoo 12.0. If you want to start the server with a different port, change **8069** to another value:
+* Then open `localhost:8069` to access Odoo 13.0. If you want to start the server with a different port, change **8069** to another value:
 
 การเข้าเว็บให้ชี้ไปที่ port 8069 เช่น localhost:8069 หรือ http://(ip):8069 เป็นต้น
 ```
@@ -200,10 +200,10 @@ Basic module stater is in addons host folder
 # ขอให้สนุกกับการเขียนโปรแกรม
 
 
-https://www.odoo.com/documentation/12.0/howtos/backend.html
+https://www.odoo.com/documentation/13.0/howtos/backend.html
 
 
-# Odoo 12 screenshots
+# Odoo 13 screenshots
 
 ![odoo-12-welcome-docker](screenshots/odoo-12-welcome-screenshot.png)
 
