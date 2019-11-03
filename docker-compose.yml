@@ -13,9 +13,9 @@ services:
     volumes:
       - ./log/pgsql:/var/log/postgresql
 
-  odoo12:
+  odoo13:
     container_name: odoo    
-    image: odoo:12.0
+    image: odoo:13
     depends_on:
       - db
     ports:
