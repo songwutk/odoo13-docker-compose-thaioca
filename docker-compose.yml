@@ -15,7 +15,7 @@ services:
 
   odoo13:
     container_name: odoo    
-    image: odoo:13
+    image: poonlap/odoo-th:13.0
     depends_on:
       - db
     ports:
