@@ -66,7 +66,7 @@ cd /var/docker
 เราจะเริ่ม clone โปรเจค docker มาลงในเครื่องด้วยคำสั่ง git
 
 ```
-git clone https://github.com/songwutk/odoo-13-docker-compose.git
+git clone https://github.com/songwutk/odoo13-docker-compose-thaioca
 
 cd odoo-13-docker-compose
 ```
