@@ -39,6 +39,6 @@ services:
       - PGADMIN_DEFAULT_PASSWORD=admin
     ports:
       - "5050:80"
-    volumes:
-      - ./pgbackup/:/backup
-      - ./pgbackup/:/var/lib/pgadmin/storage/pgadmin4_pgadmin.org/backup
+#    volumes:
+#      - ./pgbackup/:/backup
+#      - ./pgbackup/:/var/lib/pgadmin/storage/pgadmin4_pgadmin.org/backup
