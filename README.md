@@ -203,6 +203,20 @@ Basic module stater is in addons host folder
 https://www.odoo.com/documentation/13.0/howtos/backend.html
 
 
+# การปรับแต่ง PostgreSQL เพื่อเพิ่มประสิทธิภาพ
+
+คัดลอกไฟล์ config ออกมาจาก container ด้วยคำสั่ง
+docker cp pgsql:/var/lib/postgresql/data/postgresql.conf .
+
+แก้ไขไฟล์ postgresql.conf ตามค่าที่แนะนำในเว็บ https://pgtune.leopard.in.ua/#/
+
+บันทึกไฟล์ config กลับไปใน container ด้วยคำสั่ง
+
+docker cp postgresql.conf pgsql:/var/lib/postgresql/data/
+
+restart container ด้วยคำสั่ง docker-compose restart
+
+
 # Odoo 13 screenshots
 
 ![odoo-12-welcome-docker](screenshots/odoo-12-welcome-screenshot.png)
