@@ -28,7 +28,7 @@ services:
       - ./addons:/mnt/extra-addons
       - ./etc/odoo:/etc/odoo
       - ./log:/var/log/odoo      
-      - ./filestore:/var/lib/odoo/filestore
+      - ./odoo:/var/lib/odoo
     restart: always             # run as a service
     
   pgadmin:
